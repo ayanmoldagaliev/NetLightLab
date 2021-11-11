@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="sass/style.css" />
+    <title>Бассейны</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav nav">
+          <ul class="header__menu menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link-active">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Товары</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="header__logo logo">
+            <a href="#" class="logo__link">
+              <img src="img/logo/logo.png" alt="logo" class="logo__image" />
+            </a>
+          </div>
+
+          <ul class="header__tel tel">
+            <li class="tel__item">
+              <a type="tel" href="" class="tel__link">+7 727 368 83 56</a>
+            </li>
+            <li class="tel__item">
+              <a type="tel" href="" class="tel__link">+7 771 964 36 50</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="section promo">
+          <h1 class="section__title promo__title">Строительство бассейнов</h1>
+          <p class="promo__description">
+            <span class="section__description-bold">Полный спект работ</span>:
+            от проектирования и сдачи “под ключ” до обслуживания <br />
+            или реконструкции вашего бассейна, а также большой выбор товаров
+          </p>
+          <button class="button promo__button">Оставить заявку</button>
+        </section>
+        <!-- /.section promo -->
+      </div>
+      <!-- container -->
+      <img
+        src="img/bg/blink.png"
+        alt="blink"
+        class="header__image header__image-blink"
+      />
+      <img
+        src="img/bg/wave_bg.png"
+        alt="wave"
+        class="header__image header__image-wave"
+      />
+    </header>
+    <!-- header -->
+    <main class="main">
+      <section class="section our-works">
+        <div class="container">
+          <h2 class="section__title our-works__title">наши работы</h2>
+          <div class="our-works__slider">
+            <div class="swiper">
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      src="img/slider/1.png"
+                      alt="slide-1"
+                      class="swiper-img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/slider/2.png"
+                      alt="slide-2"
+                      class="swiper-img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/slider/3.png"
+                      alt="slide-3"
+                      class="swiper-img"
+                    />
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-buttons">
+                  <div class="swiper-button swiper-button-prev"></div>
+                  <div class="swiper-button swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section price">
+        <div class="price-header">
+          <img
+            src="img/bg/wave_header.png"
+            alt="price-wave__header"
+            class="price-header__image"
+          />
+          <img
+            src="img/bg/wave_blink.png"
+            alt="price-wave__header-blink"
+            class="price-header__image price-header__image-blink"
+          />
+        </div>
+        <div class="price-body">
+          <div class="container">
+            <h2 class="section__title price__title">
+              сколько будет стоить бассейн?
+            </h2>
+            <p class="section__description price__description">
+              Ответьте на несколько вопросов и наши специалисты отправят вам
+              смету <br />в течении
+              <span class="section__description-bold">1 рабочего дня</span>
+            </p>
+            <!-- .section__description price__description -->
+
+            <div class="price-container">
+              <form action="#" class="form price-form">
+                <div class="price-form-block">
+                  <label for="choose__pool" class="form-label price-form-label"
+                    >Отделка чаши:</label
+                  >
+                  <select
+                    name="choose-pool"
+                    id="choose-pool"
+                    class="form-select price-form-select"
+                  >
+                    <option value="polypropylene">Полипропилен</option>
+                    <option value="mosaic">Мозайкой</option>
+                  </select>
+                </div>
+
+                <div class="price-form-block">
+                  <label
+                    for="choose-heating"
+                    class="form-label price-form-label"
+                    >Нагрев воды:</label
+                  >
+                  <select
+                    name="choose-heating"
+                    id="choose-heating"
+                    class="form-select price-form-select"
+                  >
+                    <option value="no">Нет</option>
+                    <option value="yes">Есть</option>
+                  </select>
+                </div>
+                <div class="price-form-block">
+                  <label
+                    for="area-pool"
+                    class="form-label price-form-label price-form-label-area"
+                    >Размер<br />бассейна:</label
+                  >
+                  <input
+                    type="range"
+                    class="price-form-input-range"
+                    name="area-pool"
+                    id="area-pool"
+                  />
+                  <span class="area">7*3 <sup>м.</sup></span>
+                </div>
+                <div class="price-form-block">
+                  <button class="button price-form-button">
+                    Оставить заявку
+                  </button>
+                </div>
+              </form>
+              <div class="price-block">
+                <img
+                  src="img/price/price__image.png"
+                  alt="price__image"
+                  class="price-block__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-footer">
+          <img
+            src="img/bg/wave_footer.png"
+            alt="price-footer"
+            class="price-footer__image"
+          />
+        </div>
+      </section>
+      <section class="section products">
+        <div class="container">
+          <h2 class="section__title prodects__title">Товары для бассейна</h2>
+
+          <ul class="section__tabs products__tabs">
+            <li class="section__tabs_item products__tabs_item">
+              <a
+                href=""
+                class="
+                  section__tabs_link section__tabs_link-active
+                  products__tabs_link
+                "
+                >Все</a
+              >
+            </li>
+            <li class="section__tabs_item products__tabs_item">
+              <a href="" class="section__tabs_link products__tabs_link"
+                >Насосы</a
+              >
+            </li>
+            <li class="section__tabs_item products__tabs_item">
+              <a href="" class="section__tabs_link products__tabs_link"
+                >Нагреватели</a
+              >
+            </li>
+          </ul>
+          <div class="section__slider products__slider">
+            <div class="swiper products__swiper">
+              <div class=".swiper-container products__swiper_container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper products__swiper_wrapper">
+                  <!-- Slides -->
+                  <div class="products__swiper_slide">
+                    <div class="swiper-slide-item products__swiper_item">
+                      <img
+                        src="img/products/1.png"
+                        alt="1"
+                        class="products__swiper_image"
+                      />
+                      <p class="products__descr">
+                        Фильтровальная<br />установка Bestway
+                      </p>
+                    </div>
+                  </div>
+                  <div class="products__swiper_slide">
+                    <div class="swiper-slide-item products__swiper_item">
+                      <img
+                        src="img/products/2.png"
+                        alt="2"
+                        class="products__swiper_image"
+                      />
+                      <p class="products__descr">
+                        Прожектор под плитку с<br />оправой из ABS-пластика
+                      </p>
+                    </div>
+                  </div>
+                  <div class="products__swiper_slide">
+                    <div class="swiper-slide-item products__swiper_item">
+                      <img
+                        src="img/products/3.png"
+                        alt="3"
+                        class="products__swiper_image"
+                      />
+                      <p class="products__descr">
+                        Фильтровальная<br />установка Bestway
+                      </p>
+                    </div>
+                  </div>
+                  <div class="products__swiper_slide">
+                    <div class="swiper-slide-item products__swiper_item">
+                      <img
+                        src="img/products/4.png"
+                        alt="4"
+                        class="products__swiper_image"
+                      />
+                      <p class="products__descr">
+                        Прожектор под плитку с<br />оправой из ABS-пластика
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div
+                  class="swiper-button swiper-button-prev products__btn-prev"
+                ></div>
+                <div
+                  class="swiper-button swiper-button-next products__btn-next"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section offer">
+        <h2 class="section__title offer__title">что вы получаете?</h2>
+      </section>
+      <section class="section question">
+        <h2 class="section__title question__title">остались вопросы?</h2>
+      </section>
+    </main>
+    <!--main-->
+    <footer class="footer">
+      <div class="container">
+        <div class="contacts"></div>
+      </div>
+    </footer>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
